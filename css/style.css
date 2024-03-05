@@ -1,0 +1,172 @@
+.top {
+    background-color: rgb(36, 35, 35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    max-height: fit-content;
+}
+
+.top a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+  
+.top a:hover {
+    background-color: #2173bb;
+}
+
+.navbar_icon {
+    display: flex;
+    margin-top: 20px;
+}
+
+#index_body, #unity_body, #unreal_body, #godot_body, #kontakt_body, #dakujeme_body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#unity_body, #unreal_body, #kontakt_body, #godot_body, #dakujeme_body {
+    color:rgb(255, 255, 255);
+}
+
+#index_text{
+    font-size: 80px;
+    color: white;
+}
+
+main {
+    margin: 5% 10px;
+}
+
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+#index_container {
+    display: flex;
+    margin-top: 10%;
+}
+
+#index_imacontainer {
+    display: flex;
+}
+
+#index_footer {
+    text-align: center;
+    color:white;
+}
+
+.footer_text {
+    color:red; 
+    font-weight: bolder;
+}
+
+.zdroj {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #6c757d;
+    color: #ffffff;
+    background-color: #6c757d;
+    border-radius: 4px;
+}
+  
+.zdroj:hover {
+    color: #fff;
+    background-color: #2173bb;
+    border-color: #2173bb;
+}
+
+.start_container {
+    padding:20px;
+    margin-top: 7%;
+}
+
+.history_container {
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.image_container {
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.pricing_container {
+    padding: 15px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.dakujeme_container {
+    padding: 50px;
+    margin: 20%;
+    text-align: center;
+}
+
+.accordion-item{
+    background-color: rgb(36, 35, 35) !important;
+    color: #fff !important
+}
+.accordion-button{
+    background-color: rgb(36, 35, 35) !important;
+    color: #fff !important;
+    border: solid 1px white !important;
+}
+
+.form-control {
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+#form_container {    
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+}
+
+#kontakt_body {
+    padding-top: 28px;
+}
+
+#unreal_placeholder {
+    margin-top: 5%
+}
+
+@media(max-width: 767px ) {
+    #unity_body,#unreal_body,#godot_body,#kontakt_body, #dakujeme_body {
+        padding-top: 50px;
+    }
+    #form_container {    
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .dakujeme_container {
+        margin: 65%;
+    }
+    .navbar_icon {
+        display: flex;
+    }
+    #index_text{
+        padding-top: 50px;
+        font-size: 60px;
+    }
+    #code1 {
+        display: flex;
+        width: 350px;
+        height: 250px;
+    }
+    #index_footer {
+        margin-top: 100px;
+    }
+}
