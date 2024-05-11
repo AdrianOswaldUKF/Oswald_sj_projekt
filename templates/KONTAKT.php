@@ -10,32 +10,32 @@ include_once('partials/header.php');
             <hr>
 
             <!-- Redirect na thank you page, Alert -->
-            <form onsubmit="sucess()" action="dakujeme.html">
+            <form id="contact" onsubmit="sucess()" action="DAKUJEME.php" method="POST">
 
                 <!-- Pole Meno -->
                 <div class="mb-3">
                     <label for="meno" class="form-label">Meno</label>
-                    <input type="text" class="form-control" id="meno">
+                    <input type="text" class="form-control" id="meno" name="name">
                 </div>
 
                 <!-- Pole Email -->
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
 
                 <!-- Pole Textarea -->
                 <div class="mb-3">
                     <label for="poznamka" class="form-label">Poznámka</label>
-                    <textarea class="form-control" id="poznamka" rows="5"></textarea>
+                    <textarea class="form-control" id="poznamka" rows="5" name="message"></textarea>
                 </div>
 
                 <!-- Súhlas so spracovaním osobných údajov -->
                 <div class="mb-3">
-                    <label for="consent" class="checkmark">Súhlasím so spracovaním mojích údajov: </label> 
-                    <input type="checkbox" id="consent" name="consent" value="agree" required>                   
+                    <label for="acceptance" class="checkmark">Súhlasím so spracovaním mojích údajov: </label> 
+                    <input type="checkbox" id="acceptance" name="acceptance" value="1" required>                   
                 </div>
-                <button type="submit" class="btn btn-primary">Odoslať</button>
+                <input type="submit" name="contact_submitted" class="btn btn-primary" value="Odoslať">
             </form>
             <br>
             <p>Kontaktujte nás aj priamo, <a href="mailto:mail@email.com">mail@email.com</a>.</p>
