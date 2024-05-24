@@ -19,7 +19,7 @@ if(isset($_SESSION['logged_in'])&&$_SESSION['logged_in']==true){
             <div class="mb-3">
                 <label for="password" class="form-label">Heslo:</label>
                 <br>
-                <input type="text" name="password" placeholder="Vaše heslo">
+                <input type="password" name="password" placeholder="Vaše heslo">
                 <br>
             </div>
             <button type="submit" class="btn btn-primary" value="Odoslať" name="user_login">Prihlásiť sa</button>
